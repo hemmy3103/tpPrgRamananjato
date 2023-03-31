@@ -22,7 +22,7 @@ public class Bean {
      */
     public Bean() {
     }
-    
+
     private int nombre;
 
     public int getNombre() {
@@ -41,5 +41,8 @@ public class Bean {
         }
         return l;
     }
-    
+
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&faces-redirect=true";
+    }
 }
