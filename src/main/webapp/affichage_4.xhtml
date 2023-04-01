@@ -18,8 +18,6 @@
         <ui:repeat value="#{beanRedirection.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
-        <h:form>
-            <h:link outcome="#{beanRedirection.displayPrevious()}" value="Saisir un autre nombre"/>
-        </h:form>
+        <h:link outcome="#{beanRedirection.displayPrevious()}" value="Saisir un autre nombre"/>
     </h:body>
 </html>
